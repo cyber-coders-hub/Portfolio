@@ -1,0 +1,15 @@
+.topic {
+    color: rgb(133, 247, 247);
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+
+.url {
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+
+}

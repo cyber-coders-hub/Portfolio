@@ -1,0 +1,250 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.pp {
+    width: 25rem;
+    height: 40rem;
+    position: absolute;
+    top: 15rem;
+    left: 7rem;
+    border-radius: 1rem;
+}
+
+.title {
+    position: absolute;
+    top: 15rem;
+    left: 55rem;
+    color: white;
+}
+
+.name {
+    position: absolute;
+    top: 20rem;
+    left: 40rem;
+    color: cyan;
+}
+
+.db_name {
+    position: absolute;
+    top: 20rem;
+    left: 43.2rem;
+    color: white;
+}
+
+.dob {
+    position: absolute;
+    top: 20rem;
+    left: 70rem;
+    color: cyan;
+}
+
+.db_dob {
+    position: absolute;
+    top: 20rem;
+    left: 72.7rem;
+    color: white;
+}
+
+.address {
+    position: absolute;
+    top: 25rem;
+    left: 40rem;
+    color: cyan;
+}
+
+.db_address {
+    position: absolute;
+    top: 25rem;
+    left: 44.2rem;
+    color: white;
+}
+
+.email {
+    position: absolute;
+    top: 25rem;
+    left: 70rem;
+    color: cyan;
+}
+
+.db_email a {
+    position: absolute;
+    top: 25rem;
+    left: 72.9rem;
+    color: white;
+    text-decoration: none;
+}
+
+.db_email a:hover {
+    color: rgb(142, 245, 245);
+}
+
+.hobbies {
+    position: absolute;
+    top: 30rem;
+    left: 40rem;
+    color: cyan;
+}
+
+.db_hobbies {
+    position: absolute;
+    top: 30rem;
+    left: 44.2rem;
+    color: white;
+}
+
+.website {
+    position: absolute;
+    top: 30rem;
+    left: 70rem;
+    color: cyan;
+}
+
+.db_website a {
+    position: absolute;
+    top: 30rem;
+    left: 74rem;
+    color: white;
+    text-decoration: none;
+}
+
+.db_website a:hover {
+    color: rgb(142, 245, 245);
+}
+
+.bio {
+    position: absolute;
+    top: 35rem;
+    left: 40rem;
+    color: cyan;
+}
+
+.db_bio {
+    position: absolute;
+    top: 35.3rem;
+    left: 42.2rem;
+    color: white;
+    font-size: 0.95rem;
+
+}
+
+@media(max-width:992px) {
+    .pp {
+        position: absolute;
+        left: 10%;
+        top: 15rem;
+        justify-items: center;
+    }
+
+    .about {
+        position: absolute;
+        left: 10%;
+        top: 10rem;
+    }
+
+    .name {
+        position: absolute;
+        top: 57rem;
+        left: 10%;
+        color: cyan;
+    }
+
+    .db_name {
+        position: absolute;
+        top: 57rem;
+        left: 25.2%;
+        color: white;
+    }
+
+    .dob {
+        position: absolute;
+        top: 60rem;
+        left: 10%;
+        color: cyan;
+    }
+
+    .db_dob {
+        position: absolute;
+        top: 60rem;
+        left: 25%;
+        color: white;
+    }
+
+    .address {
+        position: absolute;
+        top: 63rem;
+        left: 10%;
+        color: cyan;
+    }
+
+    .db_address {
+        position: absolute;
+        top: 63rem;
+        left: 25%;
+        color: white;
+    }
+
+    .email {
+        position: absolute;
+        top: 66rem;
+        left: 10%;
+        color: cyan;
+    }
+
+    .db_email a {
+        position: absolute;
+        top: 66rem;
+        left: 25%;
+        color: white;
+        text-decoration: none;
+    }
+
+    .hobbies {
+        position: absolute;
+        top: 69rem;
+        left: 10%;
+        color: cyan;
+    }
+
+    .db_hobbies {
+        position: absolute;
+        top: 69rem;
+        left: 25%;
+        color: white;
+    }
+
+    .website {
+        position: absolute;
+        top: 72rem;
+        left: 10%;
+        color: cyan;
+    }
+
+    .db_website a {
+        position: absolute;
+        top: 72rem;
+        left: 25%;
+        color: white;
+        text-decoration: none;
+    }
+
+    .bio {
+        position: absolute;
+        top: 75rem;
+        left: 10%;
+        color: cyan;
+    }
+
+    .db_bio {
+        position: absolute;
+        top: 75rem;
+        left: 25%;
+        color: white;
+        padding-right: 2rem;
+
+    }
+
+}

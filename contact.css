@@ -1,0 +1,173 @@
+html {
+    overflow: hidden;
+
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 1%;
+    border-radius: 1rem;
+    filter: blur(8px);
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.topic {
+    color: rgb(208, 247, 247);
+}
+
+.contain {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-left {
+    position: absolute;
+    top: 20rem;
+    left: 35%;
+}
+
+.location-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.mail-icon {
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.call-icon {
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.socials {
+    position: relative;
+    top: 34rem;
+    left: 35%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+    color: white;
+    width: 15%;
+}
+
+.socials li {
+    margin: 0 1rem;
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(248, 247, 247);
+}
+
+.socials a i {
+    font-size: 3rem;
+    transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+@media(max-width:1250px) {
+    html {
+        font-size: 85%;
+    }
+
+    .socials {
+        left: 8rem;
+    }
+
+}
+
+@media(max-width:1000px) {
+    html {
+        font-size: 75%;
+    }
+
+    .socials {
+        left: 8rem;
+    }
+}
+
+@media(max-width:900px) {
+    html {
+        font-size: 65%;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 23rem;
+        left: 13rem;
+    }
+
+    .socials {
+        top: 37rem;
+        left: 18.5rem;
+    }
+
+    .nbar {
+        line-height: 3rem;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 55%;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 15rem;
+        left: 30%;
+    }
+
+    .socials {
+        top: 29rem;
+        left: 43%;
+    }
+}
+
+@media(max-height:1600px) {
+    .bg {
+        width: 45rem;
+    }
+}
+
+@media(max-height:500px) {
+    .top-left {
+        position: absolute;
+        top: 5rem;
+        left: 10%;
+    }
+
+    .socials {
+        top: 19rem;
+        left: 15%;
+    }
+}
+
+@media(max-height:800px) {
+    .top-left {
+        position: absolute;
+        top: 15rem;
+        left: 30%;
+    }
+
+    .socials {
+        top: 29rem;
+        left: 35%;
+    }
+
+}

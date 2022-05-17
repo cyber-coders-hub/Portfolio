@@ -1,0 +1,49 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+}
+
+.title1 {
+    color: cyan;
+    position: absolute;
+    top: 17rem;
+    left: 1rem;
+
+}
+
+.resume {
+    color: white;
+}
+
+#education {
+    margin-top: 17rem;
+    border-radius: 2rem;
+}
+
+.title2 {
+    color: cyan;
+    position: relative;
+    top: 4rem;
+    left: 1rem;
+
+}
+
+#experience {
+    margin-top: 8rem;
+    border-radius: 2rem;
+}
+
+.desc {
+    color: rgb(243, 232, 214);
+}
+
+.sub_head {
+    color: rgb(199, 195, 195);
+}
+
+.body {
+    pointer-events: none;
+}
