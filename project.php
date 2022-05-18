@@ -1,3 +1,10 @@
+<!-- In the databse create a column of name projects which contain following rows:
+1) photo_link
+2) project_link
+3) project_name
+4) project_detail
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,61 +14,50 @@
     <title>Projects | Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="projects.css" href=<%="'mystyle.css?version="+ DateTime.Now.ToString("yyyyMMddhhmmss") +"'"%>
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body class="bg-dark">
-    <?php include 'navbar.php' ?>
-    <h1 class="topic">Github Projects</h1>
-    <br>
-    <br><br>
-    <div>
+<?php include 'navbar.php'; ?>
 
-  <?php
-  // for example your user
-  $user = 'github_username';
+    <?php 
+    include 'db.php';
+    $q = "select * from projects";
+    $query = mysqli_query($conn,$q);
+    while($res = mysqli_fetch_array($query)){
+    ?>
+<div
+  id="carouselMultiItemExample"
+  class="carousel slide carousel-dark text-center"
+  data-mdb-ride="carousel"
+>
+  <div class="carousel-inner py-4">
+    <div class="carousel-item active">
+      <div class="container" >
+        <div class="col">
+            <div class="span4">
+            <div class="card">
+              <img
+                src="<?php echo $res['photo_link']; ?>"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title"><a href="<?php echo $res['project_link']; ?>">cyber-coders-hub/<?php echo $res['project_name']; ?></a></h5>
+                <p class="card-text">
+                <?php echo $res['project_detail']; ?>
+                </p>
+                <g fill="#24292e" fill-opacity="1" stroke="#24292e" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)">
+                <a href="<?php echo $res['project_link']; ?>" class="btn btn-primary">Open Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-  // A token that you could generate from your own github 
-  // go here https://github.com/settings/applications and create a token
-  // then replace the next string
-  $token = 'github_token';
+<?php }?>
 
-  // We generate the url for curl
-  $curl_url = 'https://api.github.com/users/' . $user . '/repos';
-
-  // We generate the header part for the token
-  $curl_token_auth = 'Authorization: token ' . $token;
-
-  // We make the actuall curl initialization
-  $ch = curl_init($curl_url);
-
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-  // We set the right headers: any user agent type, and then the custom token header part that we generated
-  curl_setopt($ch, CURLOPT_HTTPHEADER, array('User-Agent: Awesome-Octocat-App', $curl_token_auth));
-
-  // We execute the curl
-  $output = curl_exec($ch);
-
-  // And we make sure we close the curl       
-  curl_close($ch);
-
-  // Then we decode the output and we could do whatever we want with it
-  $output = json_decode($output);
-    $count = 0;
-    $lk='';
-  if (!empty($output)){
-    // now you could just foreach the repos and show them
-    foreach ($output as $repo) {
-        print '<div class="col-sm"><a href="' . $repo->html_url . '"  ><img class="url" src="https://gh-card.dev/repos/github_username/'. $repo->name . '.svg"></a><br />';
-
-    }
-  }
-
-
-?>
-    </div>
-  </div>
-</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
