@@ -1,4 +1,4 @@
-<!-- In the database create a table having following rows:
+<!-- In the database create a table having following colums:
 1) number --(for phonenumber)
 2) address --(for address)
 3) email --(for email address)
