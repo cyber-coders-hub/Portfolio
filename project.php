@@ -1,4 +1,4 @@
-<!-- In the databse create a column of name projects which contain following rows:
+<!-- In the database create a column of name projects which contain following rows:
 1) photo_link
 2) project_link
 3) project_name
