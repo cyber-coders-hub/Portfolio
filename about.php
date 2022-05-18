@@ -1,4 +1,4 @@
-<!-- In the database create a table with following rows:
+<!-- In the database create a table with following columns:
      1) name
      2) dob
      3) address
@@ -6,7 +6,7 @@
      5) website
      6) hobbies
      7) des 
-     8) photo --(photo emdeb link)
+     8) photo --(photo embed link)
 -->
 
 
