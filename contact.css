@@ -1,9 +1,8 @@
-html {
+html{
     overflow: hidden;
 
 }
-
-.bg {
+.bg{
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -13,12 +12,11 @@ html {
 
 }
 
-a {
+a{
     text-decoration: none;
     color: white;
 }
-
-.topic {
+.topic{
     color: rgb(208, 247, 247);
 }
 
@@ -26,29 +24,28 @@ a {
     position: relative;
     text-align: center;
     color: white;
-}
-
-.top-left {
+  }
+  
+  .top-left {
     position: absolute;
     top: 20rem;
     left: 35%;
-}
+  }
 
-.location-icon {
-    width: 2rem;
-    height: 2rem;
-}
+  .location-icon{
+      width: 2rem;
+      height: 2rem;
+  }
 
-.mail-icon {
-    width: 2rem;
-    height: 1.5rem;
-}
-
-.call-icon {
+  .mail-icon{
     width: 2rem;
     height: 1.5rem;
 }
 
+.call-icon{
+    width: 2rem;
+    height: 1.5rem;
+}
 .socials {
     position: relative;
     top: 34rem;
@@ -60,112 +57,101 @@ a {
     margin: 0 0 0 0;
     color: white;
     width: 15%;
-}
-
-.socials li {
+  }
+  
+  .socials li {
     margin: 0 1rem;
-}
-
-.socials a {
+  }
+  
+  .socials a {
     text-decoration: none;
     color: rgb(248, 247, 247);
-}
-
-.socials a i {
+  }
+  
+  .socials a i {
     font-size: 3rem;
     transition: color 0.4s ease;
-}
-
-.socials a:hover i {
+  }
+  
+  .socials a:hover i {
     color: aqua;
-}
+  }
 
-@media(max-width:1250px) {
-    html {
-        font-size: 85%;
-    }
+  @media(max-width:1250px){
+      .con{
+          font-size: 85%;
+      }
+      .socials{
+          left: 30rem;
+      }
 
-    .socials {
-        left: 8rem;
-    }
-
-}
-
-@media(max-width:1000px) {
-    html {
+  }
+  @media(max-width:1000px){
+    .con{
         font-size: 75%;
     }
-
-    .socials {
-        left: 8rem;
+    
+    .socials{
+        left: 25rem;
     }
 }
-
-@media(max-width:900px) {
-    html {
+  
+@media(max-width:750px){
+    .con{
         font-size: 65%;
     }
-
     .top-left {
         position: absolute;
-        top: 23rem;
-        left: 13rem;
-    }
-
-    .socials {
+        top:23rem;
+        left: 4rem;
+      }
+    .socials{
         top: 37rem;
-        left: 18.5rem;
+        left: 12rem;
     }
-
-    .nbar {
-        line-height: 3rem;
-    }
+    .socials a i {
+        font-size: 2rem;
+      }
 }
-
-@media(max-width:450px) {
-    html {
+@media(max-width:450px){
+    .con{
         font-size: 55%;
     }
-
     .top-left {
         position: absolute;
         top: 15rem;
-        left: 30%;
-    }
-
-    .socials {
+        left: 10%;
+      }
+    .socials{
         top: 29rem;
-        left: 43%;
-    }
+        left: 35%;
+    }   
 }
-
-@media(max-height:1600px) {
-    .bg {
+@media(max-height:1600px){
+    .bg{
         width: 45rem;
     }
 }
 
-@media(max-height:500px) {
+@media(max-height:500px){
     .top-left {
         position: absolute;
         top: 5rem;
         left: 10%;
-    }
-
-    .socials {
+      }
+    .socials{
         top: 19rem;
         left: 15%;
     }
 }
 
-@media(max-height:800px) {
-    .top-left {
+@media(max-height:800px){
+    .top-left{
         position: absolute;
         top: 15rem;
         left: 30%;
     }
-
-    .socials {
+    .socials{
         top: 29rem;
         left: 35%;
     }
