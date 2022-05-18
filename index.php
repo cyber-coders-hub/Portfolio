@@ -27,7 +27,7 @@
 <script>var a= document.getElementById('home');
 a.className+= ' active';</script>
 
-  <!-- Create a table in database having a row   
+  <!-- Create a table in database having a column  
   and insert the text into the row which you want to display on homepage  -->
 
   <!-- Insert the text in the given format -->
